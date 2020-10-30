@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlantLady.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="LightGreen">#B7E4C7</Color>
+            <Color x:Key="DarkGreen">#40916C</Color>
+            <Color x:Key="DarkestGreen">#1B4332</Color>
+            
+            <Style x:Key="HeaderLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="72" />
+                <Setter Property="TextColor" Value="White" />
+                <!--<Setter Property="FontFamily" Value="Michella" />-->
+            </Style>
+            
+            
+            <Style x:Key="PlantLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="32" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontFamily" Value="Amatic" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <Style TargetType="Ellipse">
+                <Setter Property="Fill" Value="#33222222"/>
+                <Setter Property="WidthRequest" Value="10"/>
+                <Setter Property="HeightRequest" Value="10"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
