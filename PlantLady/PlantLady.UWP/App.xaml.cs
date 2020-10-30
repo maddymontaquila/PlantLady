@@ -7,6 +7,8 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -77,6 +79,12 @@ namespace PlantLady.UWP
             }
             // Ensure the current window is active
             Window.Current.Activate();
+            var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+
+            // Set active window colors
+            titleBar.ForegroundColor = Windows.UI.Colors.White;
+            titleBar.BackgroundColor = Windows.UI.Colors.DarkGreen;
+
         }
 
         /// <summary>

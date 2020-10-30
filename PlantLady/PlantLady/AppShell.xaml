@@ -24,13 +24,13 @@
                TargetType="Element"
                BasedOn="{StaticResource BaseStyle}">
             <Setter Property="Shell.BackgroundColor"
-                    Value="#039BE6" />
+                    Value="{StaticResource DarkestGreen}" />
         </Style>
     </Shell.Resources>
-    <TabBar>
+    <TabBar Shell.TabBarBackgroundColor="White">
         <Tab Title="Care">
             <Tab.Icon>
-                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf05a8;" Size="Medium"/>
+                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf05a8;" Color="Black" Size="Medium"/>
             </Tab.Icon>
             <ShellContent>
                 <plantlady:HomePage />
@@ -38,7 +38,7 @@
         </Tab>
         <Tab Title="My Plants">
             <Tab.Icon>
-                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf0e66;" Size="Medium"/>
+                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf0e66;" Color="Black" Size="Medium"/>
             </Tab.Icon>
             <ShellContent>
                 <views:PlantsPage />
