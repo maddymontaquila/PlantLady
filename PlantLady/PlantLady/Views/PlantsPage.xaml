@@ -1,10 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PlantLady.Views.PlantsPage">
+             x:Class="PlantLady.Views.PlantsPage"
+             BackgroundColor="{StaticResource LightGreen}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Style="{StaticResource PlantLabel}" Text="Todo: Add swipe views!" />
+            <Frame HasShadow="True"
+               HeightRequest="120"
+               WidthRequest="120">
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0"
+                                 EndPoint="0,1">
+                        <GradientStop Color="{StaticResource DarkestGreen}"
+                              Offset="0.1"/>
+                        <GradientStop Color="{StaticResource DarkGreen}"
+                              Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Label Text="Manage Plants" 
+                   Style="{StaticResource HeaderLabel}" 
+                       FontSize="48"
+                   HorizontalOptions="CenterAndExpand" 
+                   VerticalOptions="End"/>
+            </Frame>
+            <CollectionView Margin="0,10,0,0">
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>aloe vera</x:String>
+                        <x:String>dracaena</x:String>
+                        <x:String>jade</x:String>
+                        <x:String>dieffenbachia</x:String>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView>
+                            <SwipeView.LeftItems>
+                                <SwipeItem Text="Delete"
+                                           BackgroundColor="White">
+                                    <SwipeItem.IconImageSource>
+                                        <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf01b4;" Color="Black" Size="Medium"/>
+                                    </SwipeItem.IconImageSource>
+                                </SwipeItem>
+                            </SwipeView.LeftItems>
+                            <StackLayout HeightRequest="60"
+                                  WidthRequest="300"
+                                  BackgroundColor="{StaticResource DarkGreen}">
+                                <Label Text="{Binding .}"
+                                       TextColor="White"
+                                       Style="{StaticResource PlantLabel}"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" />
+                            </StackLayout>
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

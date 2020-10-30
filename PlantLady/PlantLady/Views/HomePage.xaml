@@ -21,13 +21,12 @@
                    HorizontalOptions="CenterAndExpand" 
                    VerticalOptions="End"/>
         </Frame>
-        <CarouselView>
+        <CarouselView IndicatorView="indicatorView">
             <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>aloe vera</x:String>
                     <x:String>dracaena</x:String>
                     <x:String>jade</x:String>
-                    <x:String>dieffenbachia</x:String>
                     <x:String>dieffenbachia</x:String>
                 </x:Array>
             </CarouselView.ItemsSource>
@@ -85,12 +84,12 @@
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
-        <!--<IndicatorView x:Name="indicatorView"
+        <IndicatorView x:Name="indicatorView"
                                IndicatorColor="{StaticResource DarkGreen}"
                                SelectedIndicatorColor="{StaticResource DarkestGreen}"
                                HorizontalOptions="Center"
                                VerticalOptions="StartAndExpand"
-                                Padding="0,20,0,0"/>-->
+                                Padding="0,20,0,0"/>
     </StackLayout>
 
 </ContentPage>
