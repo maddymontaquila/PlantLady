@@ -53,7 +53,7 @@
                                 <!--<Label Text="Sun"
                                        HorizontalOptions="Center"
                                        Grid.Row="2" Grid.Column="0" />-->
-                                <AbsoluteLayout Scale=".05" Grid.Row="2" Grid.Column="0" Padding="0" Margin="0">
+                                <AbsoluteLayout Scale=".05" Grid.Row="2" Grid.Column="0" Padding="0" Margin="0,0,20,20">
                                     <Path Data="M377.139 259.492c0 66.637-54.020 120.658-120.658 120.658-66.637 0-120.658-54.021-120.658-120.658 0-66.637 54.020-120.658 120.658-120.658 66.637 0 120.658 54.020 120.658 120.658z" Fill="#000000" />
                                     <Path Data="M228.352 100.669l30.27-77.906 25.979 77.906z" Fill="#000000" />
                                     <Path Data="M228.352 411.341l30.27 77.895 25.979-77.895z" Fill="#000000" />

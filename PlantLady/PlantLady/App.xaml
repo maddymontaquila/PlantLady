@@ -11,7 +11,7 @@
             <Style x:Key="HeaderLabel" TargetType="Label">
                 <Setter Property="FontSize" Value="72" />
                 <Setter Property="TextColor" Value="White" />
-                <!--<Setter Property="FontFamily" Value="Michella" />-->
+                <Setter Property="FontFamily" Value="Michella" />
             </Style>
             
             

@@ -4,17 +4,7 @@
              x:Class="PlantLady.Views.PlantsPage">
     <ContentPage.Content>
         <StackLayout>
-            <AbsoluteLayout WidthRequest="100" HeightRequest="100" Scale=".1">
-                <Path Data="M377.139 259.492c0 66.637-54.020 120.658-120.658 120.658-66.637 0-120.658-54.021-120.658-120.658 0-66.637 54.020-120.658 120.658-120.658 66.637 0 120.658 54.020 120.658 120.658z" Fill="#000000" />
-                <Path Data="M228.352 100.669l30.27-77.906 25.979 77.906z" Fill="#000000" />
-                <Path Data="M228.352 411.341l30.27 77.895 25.979-77.895z" Fill="#000000" />
-                <Path Data="M100.659 287.601l-77.895-30.29 77.895-25.959z" Fill="#000000" />
-                <Path Data="M411.361 287.601l77.875-30.29-77.875-25.959z" Fill="#000000" />
-                <Path Data="M126.597 165.703l-33.659-76.472 73.442 36.7z" Fill="#000000" />
-                <Path Data="M346.276 385.423l76.524 33.639-36.741-73.442z" Fill="#000000" />
-                <Path Data="M168.499 388.199l-76.493 33.639 36.72-73.442z" Fill="#000000" />
-                <Path Data="M388.199 168.499l33.618-76.513-73.4 36.751z" Fill="#000000" />
-            </AbsoluteLayout>
+            <Label Style="{StaticResource PlantLabel}" Text="Todo: Add swipe views!" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
