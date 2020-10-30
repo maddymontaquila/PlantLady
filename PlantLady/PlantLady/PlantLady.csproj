@@ -12,11 +12,13 @@
 
   <ItemGroup>
     <None Remove="Resources\AmaticSC-Regular.ttf" />
+    <None Remove="Resources\materialdesignicons-webfont.ttf" />
     <None Remove="Resources\Michella-Garden.otf" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\AmaticSC-Regular.ttf" />
+    <EmbeddedResource Include="Resources\materialdesignicons-webfont.ttf" />
     <EmbeddedResource Include="Resources\Michella-Garden.otf" />
   </ItemGroup>
 

@@ -29,11 +29,17 @@
     </Shell.Resources>
     <TabBar>
         <Tab Title="Care">
+            <Tab.Icon>
+                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf05a8;" Size="Medium"/>
+            </Tab.Icon>
             <ShellContent>
                 <plantlady:HomePage />
             </ShellContent>
         </Tab>
         <Tab Title="My Plants">
+            <Tab.Icon>
+                <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf0e66;" Size="Medium"/>
+            </Tab.Icon>
             <ShellContent>
                 <views:PlantsPage />
             </ShellContent>
