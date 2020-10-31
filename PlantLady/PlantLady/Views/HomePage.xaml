@@ -87,9 +87,8 @@
         <IndicatorView x:Name="indicatorView"
                                IndicatorColor="{StaticResource DarkGreen}"
                                SelectedIndicatorColor="{StaticResource DarkestGreen}"
-                               IndicatorSize="18"
                                VerticalOptions="StartAndExpand"
-                               Padding="0,20,0,0"/>
+                               Padding="0,10,0,0"/>
     </StackLayout>
 
 </ContentPage>
