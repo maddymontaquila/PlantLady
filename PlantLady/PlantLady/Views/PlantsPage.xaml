@@ -59,6 +59,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            <Button Text="Toaster" IsEnabled="False" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

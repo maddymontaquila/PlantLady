@@ -34,7 +34,8 @@
             <CarouselView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout>
-                        <Frame HasShadow="True"
+                        <Frame BackgroundColor="White"
+                               HasShadow="True"
                                CornerRadius="20"
                                Margin="20"
                                HeightRequest="300"
