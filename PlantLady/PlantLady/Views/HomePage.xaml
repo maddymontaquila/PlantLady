@@ -8,7 +8,7 @@
                HeightRequest="120"
                WidthRequest="120"
                BackgroundColor="{StaticResource DarkGreen}">
-            <!--<Frame.Background>
+            <Frame.Background>
                 <LinearGradientBrush StartPoint="0,0"
                              EndPoint="0,1">
                     <GradientStop Color="{StaticResource DarkestGreen}"
@@ -16,13 +16,13 @@
                     <GradientStop Color="{StaticResource DarkGreen}"
                           Offset="1.0"/>
                 </LinearGradientBrush>
-            </Frame.Background>-->
+            </Frame.Background>
             <Label Text="Plant Care" 
                    Style="{StaticResource HeaderLabel}" 
                    HorizontalOptions="CenterAndExpand" 
                    VerticalOptions="End"/>
         </Frame>
-        <CarouselView>
+        <CarouselView IndicatorView="indicatorView">
             <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>aloe vera</x:String>
@@ -43,7 +43,7 @@
                                HorizontalOptions="Center"
                                VerticalOptions="CenterAndExpand">
                             <Grid ColumnDefinitions="*,*" RowDefinitions="*,200,20,10">
-                                <Label Text="{Binding Name}" 
+                                <Label Text="{Binding .}" 
                                        Style="{StaticResource PlantLabel}"
                                        Grid.Row="0" Grid.ColumnSpan="2"/>
                                 <Image Source="https://secure.img1-fg.wfcdn.com/im/94669473/resize-h800%5Ecompr-r85/1248/124805864/Live+Aloe+Plant+in+Pot.jpg"
@@ -51,10 +51,11 @@
                                        HeightRequest="150"
                                        WidthRequest="150"
                                        Grid.Row="1" Grid.ColumnSpan="2" />
-                                <Label Text="Sun"
+                                <!--<Label Text="Sun"
+                                       TextColor="Black"
                                        HorizontalOptions="Center"
-                                       Grid.Row="2" Grid.Column="0" />
-                                <!--<AbsoluteLayout Scale=".04" Grid.Row="2" Grid.Column="0" Padding="0" Margin="0,0,15,10">
+                                       Grid.Row="2" Grid.Column="0" />-->
+                                <AbsoluteLayout Scale=".04" Grid.Row="2" Grid.Column="0" Padding="0" Margin="0,0,15,10">
                                     <Path Data="M377.139 259.492c0 66.637-54.020 120.658-120.658 120.658-66.637 0-120.658-54.021-120.658-120.658 0-66.637 54.020-120.658 120.658-120.658 66.637 0 120.658 54.020 120.658 120.658z" Fill="#000000" />
                                     <Path Data="M228.352 100.669l30.27-77.906 25.979 77.906z" Fill="#000000" />
                                     <Path Data="M228.352 411.341l30.27 77.895 25.979-77.895z" Fill="#000000" />
@@ -64,34 +65,35 @@
                                     <Path Data="M346.276 385.423l76.524 33.639-36.741-73.442z" Fill="#000000" />
                                     <Path Data="M168.499 388.199l-76.493 33.639 36.72-73.442z" Fill="#000000" />
                                     <Path Data="M388.199 168.499l33.618-76.513-73.4 36.751z" Fill="#000000" />
-                                </AbsoluteLayout>-->
-                                <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="3" Grid.Column="0" >
+                                </AbsoluteLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="3" Grid.Column="0" >
                                     <Ellipse Fill="#081C15" />
                                     <Ellipse Fill="#081C15"/>
                                     <Ellipse Fill="#081C15"/>
-                                </StackLayout>-->
+                                </StackLayout>
                                 <Label Text="Water"
+                                       TextColor="Black"
                                        HorizontalOptions="Center"
                                        Grid.Row="2" Grid.Column="1"
                                        MaxLines="5"
                                        LineBreakMode="TailTruncation" />
-                                <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="3" Grid.Column="1" >
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="3" Grid.Column="1" >
                                     <Ellipse Fill="#081C15" />
                                     <Ellipse />
                                     <Ellipse />
-                                </StackLayout>-->
+                                </StackLayout>
                             </Grid>
                         </Frame>
                     </StackLayout>
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
-        <!--<IndicatorView x:Name="indicatorView"
+        <IndicatorView x:Name="indicatorView"
                                IndicatorColor="{StaticResource DarkGreen}"
                                SelectedIndicatorColor="{StaticResource DarkestGreen}"
                                HorizontalOptions="Center"
                                VerticalOptions="StartAndExpand"
-                                Padding="0,20,0,0"/>-->
+                                Padding="0,20,0,0"/>
     </StackLayout>
 
 </ContentPage>

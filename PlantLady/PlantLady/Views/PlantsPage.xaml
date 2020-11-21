@@ -30,6 +30,7 @@
                         <x:String>dracaena</x:String>
                         <x:String>jade</x:String>
                         <x:String>dieffenbachia</x:String>
+                        
                     </x:Array>
                 </CollectionView.ItemsSource>
                 <CollectionView.ItemsLayout>
@@ -45,7 +46,21 @@
                                         <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf01b4;" Color="Black" Size="Medium"/>
                                     </SwipeItem.IconImageSource>
                                 </SwipeItem>
+                                <SwipeItem Text="Favorite2"
+                                           BackgroundColor="White">
+                                    <SwipeItem.IconImageSource>
+                                        <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf01b4;" Color="Black" Size="Medium"/>
+                                    </SwipeItem.IconImageSource>
+                                </SwipeItem>
                             </SwipeView.LeftItems>
+                            <SwipeView.RightItems>
+                                <SwipeItem Text="Favorite"
+                                           BackgroundColor="White">
+                                    <SwipeItem.IconImageSource>
+                                        <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf01b4;" Color="Black" Size="Medium"/>
+                                    </SwipeItem.IconImageSource>
+                                </SwipeItem>
+                            </SwipeView.RightItems>
                             <StackLayout HeightRequest="60"
                                   WidthRequest="300"
                                   BackgroundColor="{StaticResource DarkGreen}">
@@ -59,7 +74,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <Button Text="Toaster" IsEnabled="False" />
+            <Button BackgroundColor="White" Text="Toaster" IsEnabled="True" Clicked="Button_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
