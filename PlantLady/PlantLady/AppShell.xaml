@@ -6,9 +6,9 @@
        x:Class="PlantLady.AppShell">
     <Shell.Resources>
         <Style x:Key="BaseStyle"
-               TargetType="Element">
+               TargetType="Shell">
             <Setter Property="Shell.BackgroundColor"
-                    Value="#455A64" />
+                    Value="{StaticResource DarkestGreen}" />
             <Setter Property="Shell.ForegroundColor"
                     Value="White" />
             <Setter Property="Shell.TitleColor"
@@ -17,29 +17,29 @@
                     Value="#B4FFFFFF" />
             <Setter Property="Shell.UnselectedColor"
                     Value="#95FFFFFF" />
-        </Style>
-        <Style TargetType="ShellItem"
-               BasedOn="{StaticResource BaseStyle}" />
-        <Style x:Key="DomesticShell"
-               TargetType="Element"
-               BasedOn="{StaticResource BaseStyle}">
-            <Setter Property="Shell.BackgroundColor"
-                    Value="#039BE6" />
+            <Setter Property="Shell.TabBarBackgroundColor"
+            Value="White" />
+            <Setter Property="Shell.TabBarForegroundColor"
+            Value="{StaticResource DarkGreen}" />
+            <Setter Property="Shell.TabBarTitleColor"
+            Value="{StaticResource DarkGreen}" />
+            <Setter Property="Shell.TabBarUnselectedColor"
+            Value="DarkGray" />
         </Style>
     </Shell.Resources>
-    <TabBar>
-        <Tab Title="Care">
-            <Tab.Icon>
+    <TabBar Style="{StaticResource BaseStyle}">
+        <Tab Title="Care" Icon="plant.png">
+            <!--<Tab.Icon>
                 <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf05a8;" Size="Medium"/>
-            </Tab.Icon>
+            </Tab.Icon>-->
             <ShellContent>
                 <plantlady:HomePage />
             </ShellContent>
         </Tab>
-        <Tab Title="My Plants">
-            <Tab.Icon>
+        <Tab Title="My Plants" Icon="flower.png">
+            <!--<Tab.Icon>
                 <FontImageSource FontFamily="MaterialIcons" Glyph="&#xf0e66;" Size="Medium"/>
-            </Tab.Icon>
+            </Tab.Icon>-->
             <ShellContent>
                 <views:PlantsPage />
             </ShellContent>

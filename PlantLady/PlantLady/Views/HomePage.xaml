@@ -16,7 +16,7 @@
                           Offset="1.0"/>
                 </LinearGradientBrush>
             </Frame.Background>
-            <Label Text="Plant Care" 
+            <Label Text="PLANTS!!!!!!!" 
                    Style="{StaticResource HeaderLabel}" 
                    HorizontalOptions="CenterAndExpand" 
                    VerticalOptions="End"/>
@@ -35,6 +35,7 @@
                 <DataTemplate>
                     <StackLayout>
                         <Frame HasShadow="True"
+                               BackgroundColor="White"
                                CornerRadius="20"
                                Margin="20"
                                HeightRequest="300"

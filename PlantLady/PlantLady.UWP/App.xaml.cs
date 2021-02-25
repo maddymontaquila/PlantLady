@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -56,8 +57,12 @@ namespace PlantLady.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
+
+                var assemblies = new List<Assembly>();
+                assemblies.Add(typeof(App).GetTypeInfo().Assembly);
+
                 global::Xamarin.Forms.Forms.SetFlags("Shell_UWP_Experimental");
-                Xamarin.Forms.Forms.Init(e);
+                Xamarin.Forms.Forms.Init(e, assemblies);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
@@ -66,6 +71,8 @@ namespace PlantLady.UWP
 
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
+
+                
             }
 
             if (rootFrame.Content == null)

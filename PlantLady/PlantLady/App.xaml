@@ -29,6 +29,7 @@
                 <Setter Property="HeightRequest" Value="10"/>
                 <Setter Property="VerticalOptions" Value="Center"/>
             </Style>
+
             
         </ResourceDictionary>
     </Application.Resources>
