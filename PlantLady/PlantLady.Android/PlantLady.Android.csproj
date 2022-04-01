@@ -8,6 +8,7 @@
   </PropertyGroup>
     <PropertyGroup>
 		<UseInterpreter Condition="$(TargetFramework.Contains('-android'))">True</UseInterpreter>
+		<SupportedOSPlatformVersion>28.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
  <ItemGroup>
