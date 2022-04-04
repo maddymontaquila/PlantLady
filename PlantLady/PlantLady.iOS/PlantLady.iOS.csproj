@@ -9,7 +9,7 @@
 
   <!-- <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    </ItemGroup> -->
+    </ItemGroup>  -->
 
 <ItemGroup>
     <ProjectReference Include="..\PlantLady\PlantLady.csproj">
