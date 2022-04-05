@@ -7,7 +7,8 @@
         <Frame HasShadow="True"
                HeightRequest="120"
                WidthRequest="120">
-            <Frame.Background>
+               <!-- maui bug : https://github.com/dotnet/maui/issues/5812  -->
+            <!-- <Frame.Background>
                 <LinearGradientBrush StartPoint="0,0"
                              EndPoint="0,1">
                     <GradientStop Color="{StaticResource DarkestGreen}"
@@ -15,7 +16,7 @@
                     <GradientStop Color="{StaticResource DarkGreen}"
                           Offset="1.0"/>
                 </LinearGradientBrush>
-            </Frame.Background>
+            </Frame.Background> -->
             <Label Text="Plant Care" 
                    Style="{StaticResource HeaderLabel}" 
                    HorizontalOptions="CenterAndExpand" 
