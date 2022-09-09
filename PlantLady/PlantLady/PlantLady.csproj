@@ -1,11 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-  </PropertyGroup>
+    <TargetFrameworks>net6.0-ios;net6.0-android</TargetFrameworks>
+    <UseMaui>True</UseMaui>
+	  <OutputType>Library</OutputType>
+	  <ImplicitUsings>enable</ImplicitUsings>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <!-- Required for C# Hot Reload -->
+	  <UseInterpreter Condition="'$(Configuration)' == 'Debug'">True</UseInterpreter>
+
+     <SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-ios'">15.4</SupportedOSPlatformVersion>
+	  <SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">31.0</SupportedOSPlatformVersion>
+
+  </PropertyGroup>
+  
+    <ItemGroup>
+      <MauiFont Include="Resources\*" />
+    </ItemGroup>
+
+
+  <!-- <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
@@ -25,12 +39,12 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
-  </ItemGroup>
-
+  </ItemGroup> -->
+<!-- 
   <ItemGroup>
     <EmbeddedResource Update="Views\PlantsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-  </ItemGroup>
+  </ItemGroup> -->
 
 </Project>

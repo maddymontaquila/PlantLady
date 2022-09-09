@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30626.31
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32330.571
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantLady.UWP", "PlantLady\PlantLady.UWP\PlantLady.UWP.csproj", "{CB144BDB-F56A-4894-AFC6-6293EDA2B9B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantLady.Android", "PlantLady\PlantLady.Android\PlantLady.Android.csproj", "{91D882E4-B049-4F66-9B2C-6AD42966217E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlantLady.Android", "PlantLady\PlantLady.Android\PlantLady.Android.csproj", "{91D882E4-B049-4F66-9B2C-6AD42966217E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantLady.iOS", "PlantLady\PlantLady.iOS\PlantLady.iOS.csproj", "{FA46E4C6-623B-4F46-85CB-864D01C0C070}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlantLady.iOS", "PlantLady\PlantLady.iOS\PlantLady.iOS.csproj", "{FA46E4C6-623B-4F46-85CB-864D01C0C070}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantLady", "PlantLady\PlantLady\PlantLady.csproj", "{CC55A327-2B7F-4D80-8DAF-B4E0106D1D00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlantLady", "PlantLady\PlantLady\PlantLady.csproj", "{CC55A327-2B7F-4D80-8DAF-B4E0106D1D00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,8 +28,6 @@ Global
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CB144BDB-F56A-4894-AFC6-6293EDA2B9B7}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{CB144BDB-F56A-4894-AFC6-6293EDA2B9B7}.Debug|Any CPU.Build.0 = Debug|x86
-		{CB144BDB-F56A-4894-AFC6-6293EDA2B9B7}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{CB144BDB-F56A-4894-AFC6-6293EDA2B9B7}.Debug|ARM.ActiveCfg = Debug|ARM
 		{CB144BDB-F56A-4894-AFC6-6293EDA2B9B7}.Debug|ARM.Build.0 = Debug|ARM
 		{CB144BDB-F56A-4894-AFC6-6293EDA2B9B7}.Debug|ARM.Deploy.0 = Debug|ARM
@@ -99,9 +97,7 @@ Global
 		{91D882E4-B049-4F66-9B2C-6AD42966217E}.Release|x86.ActiveCfg = Release|Any CPU
 		{91D882E4-B049-4F66-9B2C-6AD42966217E}.Release|x86.Build.0 = Release|Any CPU
 		{91D882E4-B049-4F66-9B2C-6AD42966217E}.Release|x86.Deploy.0 = Release|Any CPU
-		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
-		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
+		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|ARM.ActiveCfg = Debug|iPhone
 		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|ARM.Build.0 = Debug|iPhone
 		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|ARM.Deploy.0 = Debug|iPhone
@@ -111,12 +107,12 @@ Global
 		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
-		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x64.ActiveCfg = Debug|iPhoneSimulator
-		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x64.Build.0 = Debug|iPhoneSimulator
-		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x64.Deploy.0 = Debug|iPhoneSimulator
-		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x86.ActiveCfg = Debug|iPhoneSimulator
-		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x86.Build.0 = Debug|iPhoneSimulator
-		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x86.Deploy.0 = Debug|iPhoneSimulator
+		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x64.Build.0 = Debug|Any CPU
+		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x86.Build.0 = Debug|Any CPU
+		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Debug|x86.Deploy.0 = Debug|Any CPU
 		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
 		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
 		{FA46E4C6-623B-4F46-85CB-864D01C0C070}.Release|Any CPU.Deploy.0 = Release|iPhoneSimulator

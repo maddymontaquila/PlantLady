@@ -1,4 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <UseMaui>true</UseMaui>
+    <TargetFramework>net6.0-ios</TargetFramework>
+    <OutputType>Exe</OutputType>
+    	<ImplicitUsings>enable</ImplicitUsings>
+
+  </PropertyGroup>
+
+  <!-- <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    </ItemGroup>  -->
+
+<ItemGroup>
+    <ProjectReference Include="..\PlantLady\PlantLady.csproj">
+      <Project>{EA278C7F-74CB-4DD9-9407-D2FB485A7932}</Project>
+      <Name>PlantLady</Name>
+    </ProjectReference>
+  </ItemGroup>
+ 
+
+  </Project>
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -139,4 +163,4 @@
       <Name>PlantLady</Name>
     </ProjectReference>
   </ItemGroup>
-</Project>
+</Project> -->
