@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "PlantLady.UWP (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "PlantLady.UWP (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
