@@ -22,7 +22,13 @@ namespace PlantLady.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+
             global::Xamarin.Forms.Forms.Init();
+
+#if DEBUG
+            // requires Xamarin Test Cloud Agent
+            Xamarin.Calabash.Start();
+#endif
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
