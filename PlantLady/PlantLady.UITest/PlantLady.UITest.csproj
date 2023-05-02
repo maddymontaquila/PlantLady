@@ -29,8 +29,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="NUnit" Version="3.12.0" />
-    <PackageReference Include="Xamarin.UITest" Version="3.0.7" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="Xamarin.UITest" Version="4.1.3" />
     <PackageReference Include="Xamarin.UITest.POP" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>

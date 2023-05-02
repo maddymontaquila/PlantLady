@@ -49,9 +49,9 @@ namespace PlantLady.UITest
                     .iOS
                     // Used to run a .app file on an ios simulator:
                     .AppBundle("/Users/swsat/Documents/WorkFolder/PlantLady/Binaries/PlantLady.iOS.app")
-                    .DeviceIdentifier("4EE3923F-1D19-4AB3-910F-247EC70EE561")
+                    //.DeviceIdentifier("08E49670-94FA-4303-8AD1-9C859D3FD6D3")
                     // Used to run a .ipa file on a physical ios device:
-                    //.InstalledApp("com.company.bundleid")
+                    //.InstalledApp("com.companyname.PlantLady")
                     .StartApp();
             }
         }
