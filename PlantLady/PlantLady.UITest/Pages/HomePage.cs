@@ -26,7 +26,7 @@ namespace PlantLady.UITest.Pages
             MyPlantsTab = x => x.Marked("My Plants");
             CareTab = x => x.Marked("Care");
             MyPlantsPage = x => x.Marked("Todo: Add swipe views!");
-            plantName = x => x.Marked("Dracaena");
+            plantName = x => x.Marked("dracaena");
         }
 
         public void ChangeTabsTest()
