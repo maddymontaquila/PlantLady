@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantLady", "PlantLady\Plan
 EndProject
 Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "PlantLady.UWP", "PlantLady\PlantLady.UWP\PlantLady.UWP.csproj", "{971FDE55-2F32-4F4E-A81C-B2353AA301CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantLady.UITest", "..\..\..\Downloads\XamNunitTester-main\SimpleRepository.UITest\PlantLady.UITest.csproj", "{80FFD02A-FD88-4D9B-861D-1DC786587537}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantLady.UITest", "PlantLady\PlantLady.UITest\PlantLady.UITest.csproj", "{80FFD02A-FD88-4D9B-861D-1DC786587537}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
