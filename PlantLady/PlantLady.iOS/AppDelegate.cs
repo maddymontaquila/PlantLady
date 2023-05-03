@@ -10,9 +10,16 @@ namespace PlantLady.iOS
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 
     // application events from iOS.
-    [Register("AppDelegate")]
+    //[Register("AppDelegate")]
     public partial class AppDelegate : MauiUIApplicationDelegate
     {
-        protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
+        protected override MauiApp CreateMauiApp()
+        {
+#if DEBUG
+            Xamarin.Calabash.Start();
+#endif
+
+            return MauiProgram.CreateMauiApp();
+        }
     }
 }

@@ -44,7 +44,7 @@ namespace PlantLady.UITest.Pages
         public void SwipeToPlant()
         {
             app.SwipeRightToLeft(cardItem);
-            app.SwipeRightToLeft(cardItem);
+            //app.SwipeRightToLeft(cardItem);
             app.WaitForElement(plantName, timeout: TimeSpan.FromSeconds(5));
             app.Screenshot("On new Plant");
         }
