@@ -3,26 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PlantLady.HomePage"
              BackgroundColor="{StaticResource LightGreen}">
-    <StackLayout>
-        <Frame HasShadow="True"
-               HeightRequest="120"
-               WidthRequest="120">
-               <!-- maui bug : https://github.com/dotnet/maui/issues/5812  -->
-            <!-- <Frame.Background>
-                <LinearGradientBrush StartPoint="0,0"
+    <Grid>
+           <Grid.RowDefinitions>
+        <RowDefinition Height="120" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+        <Frame Grid.Row="0"
+                   HasShadow="True">                
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,0"
                              EndPoint="0,1">
                     <GradientStop Color="{StaticResource DarkestGreen}"
                           Offset="0.1"/>
                     <GradientStop Color="{StaticResource DarkGreen}"
                           Offset="1.0"/>
                 </LinearGradientBrush>
-            </Frame.Background> -->
-            <Label Text="Plant Care" 
+                </Frame.Background>
+            </Frame> 
+            <Label Grid.Row="0"
+                    Text="Plant Care"
                    Style="{StaticResource HeaderLabel}" 
                    HorizontalOptions="CenterAndExpand" 
-                   VerticalOptions="End"/>
-        </Frame>
-        <CarouselView>
+                   VerticalOptions="EndAndExpand">
+                </Label>
+
+        <CarouselView Grid.Row="1">
             <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>aloe vera</x:String>
@@ -92,6 +101,6 @@
                                HorizontalOptions="Center"
                                VerticalOptions="StartAndExpand"
                                 Padding="0,20,0,0"/>-->
-    </StackLayout>
+    </Grid>
 
 </ContentPage>
