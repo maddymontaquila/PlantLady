@@ -4,6 +4,7 @@
     <TargetFramework>net7.0-ios</TargetFramework>
     <OutputType>Exe</OutputType>
     	<ImplicitUsings>enable</ImplicitUsings>
+    	<Platforms>AnyCPU</Platforms>
 
   </PropertyGroup>
 
@@ -14,6 +15,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
     <CreatePackage>false</CreatePackage>
   </PropertyGroup>
+
 <ItemGroup>
     <ProjectReference Include="..\PlantLady\PlantLady.csproj">
     </ProjectReference>
